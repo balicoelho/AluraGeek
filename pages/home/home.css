@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container__footer2 {
+  height: 102px;
+}
+.container__footer2 > p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #464646;
+}
