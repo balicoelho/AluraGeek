@@ -28,12 +28,13 @@
     />
     <link rel="stylesheet" href="./pages/home/home.css">
 
+    <script src="./components/header/header.js" defer></script>
     <title>AluraGeek</title>
   </head>
   <body>
     <div class="container__header-mobile">
       <img class="logo" src="./assets/Logo.svg" alt="logo Alura Geek" />
-      <button class="button is-link is-outlined loginBtn">Login</button>
+      <button class="button is-link is-outlined loginBtn" data-loginBtn1>Login</button>
       <button type="submit" class="searchBtn" title="buscar">
         <i class="fa-solid fa-magnifying-glass fa-lg"></i>
       </button>
@@ -56,8 +57,13 @@
             </form>
           </div>
         </div>
-        <button class="button is-link is-outlined loginBtn">Login</button>
-      </div>
+        <button
+          class="button is-link is-outlined loginBtn"
+          type="button"
+          data-loginBtn2
+        >
+          Login
+        </button></div>
     </div>
 
     <div class="container__banner">

@@ -85,7 +85,7 @@
 .sendBtn {
   width: 151px;
   height: 40px;
-  padding: 12px 16px 12px 16px;
+  /* padding: 12px 16px 12px 16px; */
   background-color: #2a7ae4;
   font-weight: 600;
   font-size: 14px;

@@ -1,0 +1,26 @@
+.products-list-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addBtn {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+.addBtn:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .all-products {
+    gap: 16px;
+  }
+}

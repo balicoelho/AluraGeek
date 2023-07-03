@@ -22,15 +22,17 @@
     <link rel="stylesheet" href="../../components/header/header.css" />
     <link rel="stylesheet" href="../../components/footer/footer.css" />
     <link rel="stylesheet" href="../home/home.css" />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../login/login.css" />
+    <link rel="stylesheet" href="./add-product.css" />
 
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Adicionar novo produto</title>
   </head>
   <body>
     <div class="container__login">
       <!-- Header -->
       <div class="container__header-mobile">
         <img class="logo" src="../../assets/Logo.svg" alt="logo Alura Geek" />
+        <button class="sendBtn admBtn" data-loginBtn>Menu Administrador</button>
         <button type="submit" class="searchBtn" title="buscar">
           <i class="fa-solid fa-magnifying-glass fa-lg"></i>
         </button>
@@ -57,25 +59,50 @@
               </form>
             </div>
           </div>
+          <button class="sendBtn admBtn" type="button" data-loginBtn>
+            Menu Administrador
+          </button>
         </div>
       </div>
 
       <!-- Main -->
-      <div class="container__login-main">
-        <p class="login-title">Iniciar Sessão</p>
-        <input
-          class="input-email input-message"
-          type="text"
-          name="email"
-          placeholder="Escreva seu email"
-        />
-        <input
-          class="input-password input-message"
-          type="text"
-          name="password"
-          placeholder="Escreva sua senha"
-        />
-        <button class="sendBtn loginBtn" type="button">Entrar</button>
+      <div class="container__add-product-main">
+        <div class="add-product-form">
+          <p class="add-product-title">Adicionar novo produto</p>
+          <input
+            class="input-url input-add-product"
+            type="text"
+            name="url"
+            placeholder="URL da imagem"
+          />
+          <input
+            class="input-category input-add-product"
+            type="text"
+            name="category"
+            placeholder="Categoria"
+          />
+          <input
+            class="input-productName input-add-product"
+            type="text"
+            name="productName"
+            placeholder="Nome do produto"
+          />
+          <input
+            class="input-price input-add-product"
+            type="text"
+            name="price"
+            placeholder="Preço do produto"
+          />
+          <input
+            class="input-description input-add-product"
+            type="textarea"
+            name="description"
+            placeholder="Descrição do produto"
+          />
+          <button class="sendBtn add-productBtn" type="button">
+            Adicionar produto
+          </button>
+        </div>
       </div>
 
       <!-- Footer -->

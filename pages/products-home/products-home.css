@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+.container__big-card-main {
+  background-color: #f5f5f5;
+}
+
+.big-card-infos {
+  padding: 16px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.big-card-infos > p {
+  gap: 8px;
+}
+
+.big-card-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #464646;
+}
+.big-card-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: left;
+  color: #464646;
+}
+.big-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #464646;
+}
+
+@media screen and (min-width: 540px) {
+  .container__big-card {
+    display: flex;
+    padding: 32px;
+    gap: 16px;
+  }
+
+  .big-card-img {
+    width: 254px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container__big-card {
+    gap: 16px;
+    width: 1136px;
+  }
+  .big-card-img {
+    width: 403px;
+  }
+
+  .container__big-card-main {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .big-card-infos {
+    justify-content: center;
+  }
+
+  .big-card-infos > p {
+    gap: 16px;
+  }
+
+  .big-card-title {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 61.05px;
+  }
+  .big-card-subtitle {
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+  .big-card-description {
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+}
