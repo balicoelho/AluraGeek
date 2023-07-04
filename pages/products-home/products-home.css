@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .container__big-card {
     gap: 16px;
     width: 1136px;

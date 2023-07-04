@@ -1,6 +1,43 @@
-.products-list-header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+.container__product-main-all {
+  background-color: #f5f5f5;
+  padding: 32px;
+}
+
+.container__product-list-all {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.product-list-header-all {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.product-list-title-all {
+  font-weight: 700;
+  font-size: 22px;
+  color: #464646;
+}
+
+.product-list-link-all {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2a7ae4;
+}
+
+.product-list-cards-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 16px;
 }
 
@@ -12,15 +49,55 @@
   opacity: 0.5;
 }
 
+.page-all {
+  width: 140px;
+}
+
 @media screen and (min-width: 768px) {
-  .products-list-header {
+  .products-list-header-all {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .page-all {
+    width: 164px;
+  }
+
+  .product-list-cards-all {
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1374px) {
+  .container__product-main-all {
+    padding: 64px 152px 64px 152px;
+  }
+  .container__product-list-all {
+    gap: 16px;
+  }
+
+  .product-list-title-all {
+    font-size: 32px;
+  }
+
+  .product-list-link-all {
+    font-size: 16px;
+  }
+
+  .product-list-cards-all {
+    gap: 16px;
+  }
+
+  .product-list-cards-all {
+    gap: 64px 16px;
+  }
+  .page-all {
+    width: 166px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .all-products {
-    gap: 16px;
+  .page-all {
+    width: 176px;
   }
 }
